@@ -6,8 +6,8 @@ class CreateUsers < ActiveRecord::Migration
       u.string :password_digest
       u.integer :happiness
       u.integer :nausea
-      u.integer :tickets 
-      u.integer :height 
+      u.integer :tickets
+      u.integer :height
     end
-  end 
+  end
 end
