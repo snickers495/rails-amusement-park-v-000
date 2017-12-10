@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       u.integer :nausea
       u.integer :tickets
       u.integer :height
+      u.boolean :admin
     end
   end
 end
