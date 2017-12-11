@@ -1,0 +1,10 @@
+Name: <%= @user.name %>
+Number of Tickets: <%= @user.tickets %>
+Mood: <%= @user.mood %>
+Height: <%= @user.height %>
+<% if @user.admin %>
+ADMIN: true
+<%end%>
+
+<%= link_to "See attractions", attractions_path %>
+<%= link_to "Log Out", "/signout" %>

@@ -2,5 +2,10 @@ Rails.application.routes.draw do
 
   resources :attractions
   resources :users
-  get "/", to: "users#new"
+  root "sessions#welcome"
+  get "/users/new", to: "users#new"
+  post "/signup", to: "users#create"
+  get "/signin", to: "sessions#signin"
+  post "/signin_user", to: "sessions#signin_user"
+  get "/signout", to: "sessions#signout"
 end
