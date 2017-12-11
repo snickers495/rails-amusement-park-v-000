@@ -6,5 +6,11 @@ Height: <%= @user.height %>
 ADMIN: true
 <%end%>
 
+<% if @message %>
+<div class="center alert">
+  <%= @message %>
+</div>
+<% end %>
+
 <%= link_to "See attractions", attractions_path %>
 <%= link_to "Log Out", "/signout" %>
